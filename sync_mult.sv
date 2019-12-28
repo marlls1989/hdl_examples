@@ -33,7 +33,7 @@ module mult #(WIDTH=32)
        default : ns <= ps;
      endcase // case (ps)
 
-   always_ff @(posedge clk or negedge reset)
+   always_ff @(posedge clk)
      if(ps == INITIAL) begin
         a_r <= a;
         b_r <= b;
